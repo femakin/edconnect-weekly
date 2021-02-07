@@ -44,11 +44,93 @@
         </div>
     </nav>
     <main>
-        <div class="container summary">
-            <div>
+        <div class="container summary ">
+            <div class="bio">
                 <big>Femi Tosin</big>
                 <span class="text-muted">femi@edconnect.ng</span>
             </div>
+            <div class="row bg-light">
+                <div class="col col-lg-4">
+                    <span>Program</span> <br>
+                    <span>Computer Information System</span>
+                </div>
+                <div class="col col-lg-4">
+                    <span>Matriculation number</span> <br>
+                    <span>33/3333</span>
+                </div>
+                <div class="col col-lg-4">
+                    <span>Graduation year</span> <br>
+                    <span>2016</span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class=" container mx-auto form">
+            <h4>Update Profile</h4>
+            <form>
+                <div class="form-row">
+                    <div class="col-lg-6">
+                        <label for="firstName">First Name</label>
+                        <input type="text" class="form-control" placeholder="First name" name="firstName">
+                    </div>
+                    <div class="col-lg-6">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" class="form-control" placeholder="Last name" name="lastName">
+                    </div>
+                    <div class="form-group col-lg-6">
+                        <label for="inputEmail4">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4" name="email">
+                    </div>
+                    <div class="form-group col-lg-6 col-sm-12">
+                        <label for="inputProgram">Program</label>
+                        <select id="inputProgram" class="form-control" name="program">
+                          <option selected>Choose...</option>
+                          <option>...</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group col-lg-6 col-md-4 col-sm-12 ">
+                        <label for="inputState">Matriculation Number</label>
+                        <input type="text" class="form-control" placeholder="06/2020" name="matricNumber">
+                    </div>
+                    <div class="form-group col-lg-6 col-md-2  col-sm-12">
+                        <label for="inputState">Graduation Year</label>
+                        <select id="inputState" class="form-control" name="graduationYear">
+                            <option selected>Choose...</option>
+                            <option>2020</option>
+                            <option>2019</option>
+                            <option>2018</option>
+                          </select>
+                    </div>
+                    <button type="button" class="btn btn-primary">Update Profile</button>
+                </div>
+            </form>
+
+        </div>
+
+
+
+        <div class=" container mx-auto form">
+            <h4>Change Password</h4>
+            <form>
+                <div class="form-row">
+                    <div class="col-lg-4">
+                        <label for="CurrentPassword">Current Password:</label>
+                        <input type="password" class="form-control" name="currentPassword" placeholder="Current Password" id="">
+                    </div>
+                    <div class="col-lg-4">
+                        <label for="newPassword">New Password:</label>
+                        <input type="password" class="form-control" name="newPassword" placeholder="Your new password" id="">
+                    </div>
+                    <div class="col-lg-4">
+                        <label for="confirmPassword">Confirm Password:</label>
+                        <input type="password" class="form-control" name="confirmPassword" id="" placeholder="Confirm new password">
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary">Change Password</button>
+            </form>
         </div>
 
     </main>
