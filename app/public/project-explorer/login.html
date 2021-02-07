@@ -5,33 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
 <body>
-    <header>
-        <h1>Project Explorer</h1>
-        <h2>One Stop Database for Academic Projects</h2>
-    </header>
-    <nav>
 
-        <a href="/index.html">Home</a>
-        <a href="/search.html">Projects</a>
-        <a href="/login.html">Login</a>
-        <a href="/register.html">Register</a>
-        <a href="/createproject.html">Submit</a>
+    <nav class="navbar navbar-expand-md navbar-light bg-primary ">
+        <a class="navbar-brand text-white" href="#">Project Explorer</a>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search Projects" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
 
+                <li class="nav-item">
+                    <a class="nav-link text-secondary" href="#">Submit</a>
+                </li>
+
+            </ul>
+            <div>
+                <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="#">Sign up</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="#">Login</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
     </nav>
     <main>
-
-        <h1>Login</h1>
-        <form action="">
-            <label for="email">Email Address:</label>
-            <input type="email" name="email"> <br> <br>
-            <label for="password">Password:</label>
-            <input type="password" name="password"> <br> <br>
-            <input type="submit">
-        </form>
+        <div class=" container mx-auto w-75 ">
+            <h1>Login</h1>
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control " id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+        </div>
     </main>
+    <footer class="container bg-dark">
+        <div class="float-right">
+            <span class="text-muted">Project Explorer © 2020</span>
+            <span>Edconnect</span>
+        </div>
+    </footer>
 </body>
 
 </html>
