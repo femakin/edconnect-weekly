@@ -2,8 +2,13 @@ footer {
     margin-top: 20px;
 }
 
-.bg {
+
+/* .bg {
     background-color: black !important;
+} */
+
+.form {
+    padding-top: 30px;
 }
 
 
