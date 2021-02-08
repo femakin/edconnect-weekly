@@ -5,52 +5,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .search_by {
+            padding-top: 5px;
+            background-color: #dee2e6;
+            border: 2px solid #ced4da;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <h1>Project Explorer</h1>
-        <h2>One Stop Database for Academic Projects</h2>
-    </header>
-    <nav>
+    <nav class="navbar navbar-expand-md navbar-light bg-primary ">
+        <a class="navbar-brand text-white" href="#">Project Explorer</a>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search Projects" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0 " type="submit">Search</button>
+        </form>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
 
-        <a href="/index.html">Home</a>
-        <a href="/search.html">Projects</a>
-        <a href="/login.html">Login</a>
-        <a href="/register.html">Register</a>
-        <a href="/createproject.html">Submit</a>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary" href="#">Submit</a>
+                </li>
 
-    </nav>
-    <main>
-        <section>
-            <h1>Search Project By</h1>
-            <form action="" name="searchForm">
-                <input type="text" name="searchTerm" placeholder="Project Name, Authors, Abstract, Tags"> <br> <br>
-                <label for="searchType">Search By</label> <br>
-                <!-- <input type="text" name="searchType"> <br> <br> -->
-                <select name="searchType" id="">
-                    <option value="Name">Name</option>
-                    <option value="Abstract">Abstract</option>
-                    <option value="Authors">Authors</option>
-                    <option value="Tags">Tags</option>
-                </select> <br> <br>
-                <input type="submit" value="Search">
-            </form>
-        </section>
-        <section>
-            <h1>Search Result</h1>
+            </ul>
             <div>
-                <h1>Project 1</h1>
-                <ul>
-                    <li>Name: Project 1</li>
-                    <li>Description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, recusandae.</li>
-                    <li>Program: Computer Science</li>
-                    <li>Authors: John Doe, Jane Doe</li>
-                    <li>Tags: #Asphyxis, #GSW</li>
-                    <li>Year: 2018</li>
+                <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="#">Sign up</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="#">Login</a>
+                    </li>
+
                 </ul>
             </div>
-        </section>
+        </div>
+    </nav>
+    <main>
+
+        <div class="container search  mt-4 ">
+            <h4>Project Gallery</h4>
+            <div class=" bg-light p-3 ">
+                <form>
+                    <div class="form-row mt-2 ">
+                        <div class=" form-group col-lg-7 ">
+                            <input type="text " class="form-control " placeholder="First name ">
+                        </div>
+                        <p class="col-lg-1 search_by text-center ">Search By</p>
+
+                        <div class="form-group ">
+                            <select name="searchType " id=" " class="form-control w-100 ">
+                                <option value="Name ">Name</option>
+                                <option value="Abstract ">Abstract</option>
+                                <option value="Authors ">Authors</option>
+                                <option value="Tags ">Tags</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-lg-2 ">
+                            <button class="btn btn-primary ">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="mt-4 ">
+                <h4>All Projects
+                    <span class="text-muted">(0 results)</span>
+                </h4>
+                <div class="row ">
+                    <div class="col-md-3 col-sm-12 col-lg-3 pb-4 ">
+                        <div class="card ">
+                            <div class="card-body ">
+                                <h5 class="card-title text-primary ">Project Title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted ">Author 1, Author 2</h6>
+                                <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="# " class="card-link ">#html</a>
+                                <a href="# " class="card-link ">#css</a>
+                                <a href="# " class="card-link ">#JavaScript</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-lg-3 pb-4 ">
+                        <div class="card ">
+                            <div class="card-body ">
+                                <h5 class="card-title text-primary ">Project Title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted ">Author 1, Author 2</h6>
+                                <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="# " class="card-link ">#html</a>
+                                <a href="# " class="card-link ">#css</a>
+                                <a href="# " class="card-link ">#JavaScript</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <footer class=" container bg-dark ">
+            <div class="float-right ">
+                <span class="text-muted ">Project Explorer © 2020</span>
+                <span>Edconnect</span>
+            </div>
+        </footer>
     </main>
 </body>
 

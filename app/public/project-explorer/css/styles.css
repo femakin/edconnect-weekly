@@ -23,9 +23,13 @@ div>.col {
     padding: 16px;
 }
 
-.btn {
+
+/* 
+.btn,
+.search {
     margin-top: 20px;
 }
+ */
 
 
 /* <div class="bg-dark"><div class="float-right"><span class="text-muted">Project Explorer © 2020.</span><span>Edconnect</span></div></div> */
