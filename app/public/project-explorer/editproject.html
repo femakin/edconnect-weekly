@@ -8,7 +8,19 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
-
+        p {
+            margin-top: 5px;
+            /* background-color: #dee2e6;
+            border: 2px solid #ced4da; */
+        }
+        
+        .gray {
+            background-color: #dee2e6;
+        }
+        
+        .pad {
+            margin-top: 5px;
+        }
     </style>
 </head>
 
@@ -68,11 +80,48 @@
             </div>
 
             <div class="row mt-4">
-                <div class="col bg-primary">
-                    1 of 2
+                <div class="col ">
+                    <h4>Edit Project</h4>
+                    <form action="" class="mt-30" name="submitProject">
+                        <div class="form-group ">
+                            <label for="name">Project name</label>
+                            <input type="text" class="form-control w-100 p-3 " id="" aria-describedby=" " placeholder="Enter project name " name="name">
+                        </div>
+                        <div class="form-group ">
+                            <label for="abstract">Project Abstract:</label>
+                            <textarea class="form-control w-100 p-3" name="abstract" type="text" d="exampleFormControlTextarea1 " rows="3 " placeholder="Project 1 is a very intetresting project"></textarea>
+                        </div>
+                        <div class="form-group ">
+                            <label for="authors">Authors</label>
+                            <input type="text" class="form-control w-100 p-3 " id="" type="text" name="authors" aria-describedby=" " placeholder="Femi Akinyemi">
+                        </div>
+                        <div class="form-group ">
+                            <label for="tags">Tag(s)</label>
+                            <input type="text" name="tags" class="form-control w-100 p-3 " id="" aria-describedby=" " placeholder="#web">
+                        </div>
+                        <button type="button" class="btn btn-primary"> Save</button>
+                    </form>
                 </div>
-                <div class="col bg-secondary">
-                    2 of 2
+                <div class="col ">
+                    <h4>Manage Project files</h4>
+                    <div class="row  ">
+                        <div class="col-lg-10  pr-0 pad">
+                            <input type="" class=" form-control w-100 p-3 w-100 " placeholder="Click to open file browser">
+                        </div>
+                        <div class="col-lg-2 gray ">
+                            <p class="browse text-center">Browse</p>
+                        </div>
+                    </div>
+                    <div class="card mt-5">
+                        <div class="card-header">
+                            Project files
+                        </div>
+                        <div class="card-body">
+
+                            <p class="card-text text-center">No file uploaded yet.</p>
+
+                        </div>
+                    </div>
                 </div>
             </div>
 
