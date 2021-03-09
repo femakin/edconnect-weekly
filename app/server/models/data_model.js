@@ -20,7 +20,14 @@ class DataModel {
     }
 
     update(obj, id) {
-
+        let elementsIndex = this.data.find(element => element.id == id )
+        if(!elementsIndex){
+            return false;
+        }
+        for(let key in obj){
+            elementsIndex[key] = obj[key];
+        }
+        return true;
     }
 
     delete(id) {
